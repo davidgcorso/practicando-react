@@ -1,0 +1,5 @@
+.painting {
+    width : 700px;
+    height : 500px;
+    object-fit: contain;
+}
