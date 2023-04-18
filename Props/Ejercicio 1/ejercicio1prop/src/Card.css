@@ -1,0 +1,16 @@
+.card {
+    border : 1px dotted black;
+    text-align: center;
+    border: 2px solid black;
+    width:fit-content;
+    height:fit-content;
+}
+
+.image {
+    width: 400px;
+    height: 600px;
+    object-fit: contain;
+}
+
+
+
