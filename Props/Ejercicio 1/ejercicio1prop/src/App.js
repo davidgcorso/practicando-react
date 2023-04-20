@@ -28,10 +28,12 @@ const [total,setTotal] = useState(0)
     <h1 className='title'>Single Cut Guitars</h1>
     <p className='price'>Total : ${total}</p>
     <div className='container'>
-    <Card brand={array[0].brand} price={array[0].price} color={array[0].color} image={array[0].image} setTotal={setTotal}/>
+{/*     <Card brand={array[0].brand} price={array[0].price} color={array[0].color} image={array[0].image} setTotal={setTotal}/>
     <Card brand={array[1].brand} price={array[1].price} color={array[1].color} image={array[1].image} setTotal={setTotal}/>
     <Card brand={array[2].brand} price={array[2].price} color={array[2].color} image={array[2].image} setTotal={setTotal}/>
-    <Card brand={array[3].brand} price={array[3].price} color={array[3].color} image={array[3].image} setTotal={setTotal}/>
+    <Card brand={array[3].brand} price={array[3].price} color={array[3].color} image={array[3].image} setTotal={setTotal}/> */}
+
+    {array.map((value, index) => <Card brand={array[index].brand} price={array[index].price} color={array[index].color} image={array[index].image} setTotal={setTotal} key={index}/>)} {/* Using .map function to do the same */}
     </div>
     </>
   );
