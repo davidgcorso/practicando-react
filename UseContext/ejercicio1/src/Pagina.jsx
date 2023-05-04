@@ -13,8 +13,8 @@ const Pagina = () => {
     <h1 className='titulo'>{alumno[idioma].titulo}</h1>
     <h2>{alumno[idioma].texto}</h2>
     <div className='botones'>
-        <button>{alumno[idioma].boton1} onClick={()=> {setOcultar1(!ocultar1); setOcultar2(false)}}</button>
-        <button>{alumno[idioma].boton2} onClick={()=> {setOcultar2(!ocultar2); setOcultar1(false)}}</button>
+        <button onClick={()=> {setOcultar1(!ocultar1); setOcultar2(false)}}>{alumno[idioma].boton1}</button>
+        <button onClick={()=> {setOcultar2(!ocultar2); setOcultar1(false)}}>{alumno[idioma].boton2}</button>
     </div>
     {ocultar1 ? <Profesora /> : null}
     <Ubicacion />

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import Contexto from './contexto/Contexto'
-import Provider from '.contexto/Provider'
+import Provider from './contexto/Provider';
 
 const Idiomas = () => {
     const {setAlumno}=useContext(Contexto)
@@ -20,11 +20,13 @@ const Idiomas = () => {
         sustitucion(2)
      }
   return (
+    <Provider>
     <div className='idiomas'>
         <div className='bandera'><img src='../public/img/españa.png' alt='' onClick={cambio1}/></div>
         <div className='bandera'><img src='../public/img/francia.png' alt='' onClick={cambio2}/></div>
         <div className='bandera'><img src='../public/img/reinoUnido.png' alt='' onClick={cambio3}/></div>
     </div>
+    </Provider>
   )
 }
 

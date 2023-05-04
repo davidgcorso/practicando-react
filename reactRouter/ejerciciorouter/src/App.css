@@ -1,0 +1,18 @@
+div {
+  font-size: 3rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 10px 2px;
+}
+.activo {
+  color: gold;
+  background-color: crimson;
+}
+.alHome {
+  font-size:1rem;
+  display: flex;
+  width: 50px;
+}
